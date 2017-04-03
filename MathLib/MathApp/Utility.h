@@ -30,3 +30,4 @@ public:
 	~Utility();
 };
 
+float addM(float M[1][1]);

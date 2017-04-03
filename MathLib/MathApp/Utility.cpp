@@ -15,7 +15,10 @@ int sub(int a, int b)
 	return ANSW;
 }
 
+float addM(float M[1][1])
+{
 
+}
 
 
 //Vectors
