@@ -13,7 +13,12 @@ struct Vector3
 	float z;
 };
 
-
+Vector3 Translate(const Vector3& a_first, const Vector3& a_second);
+Vector3 Add(const Vector3& a_first, const Vector3& a_second);
+Vector3 Subtract(const Vector3& a_first, const Vector3& a_second);
+Vector3 Scale(const Vector3& a_point, float a_scalar);
+Vector3 Multiply(const Vector3& a_point, float a_scalar);
+Vector3 Divide(const Vector3& a_point, float a_scalar);
 
 
 class Utility
