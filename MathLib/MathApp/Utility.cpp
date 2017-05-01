@@ -17,11 +17,11 @@ int sub(int a, int b)
 
 float addM(float M[1][1])
 {
-
+ 
 }
 
 
-//Vectors
+//Vectors V = V + V
 Vector3 Add(const Vector3& a_first, const Vector3& a_second)
 {
 	Vector3 ANSW = {};
@@ -30,7 +30,7 @@ Vector3 Add(const Vector3& a_first, const Vector3& a_second)
 	ANSW.z = a_first.z + a_second.z;
 	return ANSW;
 }
-
+//V = V - V
 Vector3 Subtract(const Vector3& a_first, const Vector3& a_second)
 {
 	Vector3 ANSW = {};
@@ -39,7 +39,7 @@ Vector3 Subtract(const Vector3& a_first, const Vector3& a_second)
 	ANSW.z = a_first.z - a_second.z;
 	return ANSW;
 }
-
+//V = V x f
 Vector3 Multiply(const Vector3& a_point, float a_scalar)
 {
 	Vector3 ANSW = {};
@@ -58,6 +58,7 @@ Vector3 Divide(const Vector3& a_point, float a_scalar)
 	return ANSW;
 }
 
+//Matrix
 
 
 Utility::Utility()
