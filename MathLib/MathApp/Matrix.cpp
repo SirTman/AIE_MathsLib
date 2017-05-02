@@ -1,12 +1,10 @@
 #include "Matrix.h"
+#include "iostream"
 
-
-
-Matrix::Matrix()
+template <class T>
+Matrix::Matrix(int rows, int colums)
 {
+
 }
 
 
-Matrix::~Matrix()
-{
-}

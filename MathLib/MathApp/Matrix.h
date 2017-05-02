@@ -25,6 +25,12 @@ public:
 
 	void setRows(int NUMrow) { row = NUMrow; }
 	void setColums(int NUMcolums) { colums = NUMcolums; }
-	~Matrix();
+	~Matrix() {}
+private:
+	T **table;
+	int row, colums;
+	
 };
+
+
 
