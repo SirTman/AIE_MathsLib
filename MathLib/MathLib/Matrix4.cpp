@@ -1,5 +1,5 @@
 #include "Matrix4.h"
-
+#include <math.h>
 ///Constructors
 template<class T>
 Matrix4<T>::Matrix4() : m11(1), m12(0), m13(0), m14(0),                                                       //Identity by default

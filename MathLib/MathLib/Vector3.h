@@ -1,12 +1,9 @@
 #pragma once
-
-#include <MathLib_Utility.h>
-#include <DLL.h>
 ///Vector3 = 2D Vector with no translation capabilities
 
 template <class T>
 
-class LIBRARY_API Vector3
+class Vector3
 {
 public:
 	///Constructor
@@ -31,12 +28,6 @@ public:
 
 	Vector3 operator / (T a_scalar) const;
 
-	// Technically not apart of the class, needs separate LIBRARY_API with the function.
-	// Definition needs to be with declaration so that each specialisation of class template defines and declares the function
-	LIBRARY_API friend Vector3 operator*(T a_scalar, const Vector3& a_rhs) {
-		return a_rhs * a_scalar;
-	}
-
 	Vector3 operator -() const;
 	///Conditions
 	bool operator == (const Vector3 &a_rhs) const;
@@ -50,10 +41,10 @@ public:
 
 	Vector3& operator -= (const Vector3& a_rhs);
 
-	
+
 	Vector3& operator *= (T a_scalar);
 
-	
+
 	Vector3& operator /= (T a_scalar);
 #pragma endregion
 

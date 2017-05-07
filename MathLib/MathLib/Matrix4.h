@@ -1,5 +1,6 @@
 #pragma once
 #include "Vector4.h"
+#include <math.h>
 template <class T>
 
 ///Matrix4 = 2D Matrix with no translation

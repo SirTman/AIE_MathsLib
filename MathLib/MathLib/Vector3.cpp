@@ -1,5 +1,5 @@
 #include <Vector3.h>
-
+#include <math.h>
 #pragma region Constructors
 template<class T>
 Vector3<T>::Vector3() : x(0), y(0), z(0) {}
@@ -136,7 +136,7 @@ Vector3<T> Vector3<T>::cross(const Vector3& a_rhs) {
 template<class T>
 T Vector3<T>::magnitude()
 {
-	return T(sqrt14((x * x) + (y * y) + (z * z)));                       //Square root returns a double, typecast to float
+	return T(sqrtf((x * x) + (y * y) + (z * z)));                       //Square root returns a double, typecast to float
 }
 
 template<class T>

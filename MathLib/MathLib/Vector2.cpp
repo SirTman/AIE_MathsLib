@@ -1,6 +1,6 @@
 #pragma once
 #include <Vector2.h>
-
+#include <math.h>
 #pragma region Constructors
 template<class T>
  Vector2<T>::Vector2() : x(0), y(0) {}
@@ -127,7 +127,7 @@ template<class T>
 template<class T>
  T Vector2<T>::magnitude()
 {
-	return T(sqrt14((x * x) + (y * y)));                       //Square root returns a double, typecast to float
+	return T(sqrtf((x * x) + (y * y)));                       //Square root returns a double, typecast to float
 }
 
 template<class T>

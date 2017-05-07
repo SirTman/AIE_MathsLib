@@ -1,5 +1,5 @@
 #include "Matrix3.h"
-
+#include <math.h>
 ///Constructors
 template<class T>
 Matrix3<T>::Matrix3() : m11(1), m12(0), m13(0),                                                         //Identity matrix by default

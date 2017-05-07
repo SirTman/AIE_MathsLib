@@ -1,5 +1,5 @@
 #include "Matrix2.h"
-
+#include <math.h>
 ///Constructors
 template<class T>
 Matrix2<T>::Matrix2() : m11(1), m12(0),                                      //Identity by default

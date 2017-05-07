@@ -35,8 +35,8 @@ M.setRotateX( f ) and M.setRotateY( f ) and M.setRotateZ( f ) (for Matrix3 and M
 int main()
 {
 	//std::cout << add(10, 5) << std::endl; 
-	Vector2 test = Add(v2(1, 2), v2(1, 2));
-	std::cout << test;
+	//Vector2 test = Add(v2(1, 2), v2(1, 2));
+	//std::cout << test;
 	
 	system("pause");
 	return 0;
