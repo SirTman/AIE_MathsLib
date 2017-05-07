@@ -59,8 +59,8 @@ Vector4<T> Matrix4<T>::operator * (const Vector4<T> &a_rhs) const {             
 	[m41, m42, m43, m44]			 w]             [c_m41]
 	*/
 	return Vector4<T>
-		((m11 * a_rhs.x + m21 * a_rhs.y + m31 * a_rhs.z + m41 * a_rhs.w), //NOTE: When multiplying a matrice with a vector, it has to be treated cxr instead of rxc because the vector is
-		 (m12 * a_rhs.x + m22 * a_rhs.y + m32 * a_rhs.z + m42 * a_rhs.w), //technically a row vector, even though we're still getting the rows from the lhs and the columns from the rhs.
+		((m11 * a_rhs.x + m21 * a_rhs.y + m31 * a_rhs.z + m41 * a_rhs.w), 
+		 (m12 * a_rhs.x + m22 * a_rhs.y + m32 * a_rhs.z + m42 * a_rhs.w), 
 		 (m13 * a_rhs.x + m23 * a_rhs.y + m33 * a_rhs.z + m43 * a_rhs.w),
 		 (m14 * a_rhs.x + m24 * a_rhs.y + m34 * a_rhs.z + m44 * a_rhs.w));
 }
