@@ -47,7 +47,7 @@ public:
 
 	void set(T *a_ptr);                                        	// rebuild the matrix - expects pointer to array of 4 floats
 
-	void setRotateZ(float a_rot);                                 // Rotate Matrix2 on the z axis circle
+	void setRotate(float a_rot);                                 // Rotate Matrix2 on the z axis circle
 
 	void setScale(T a_scaleX, T a_scaleY);                 // Scale matrix by given values
 #pragma endregion

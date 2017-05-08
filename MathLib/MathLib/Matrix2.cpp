@@ -96,7 +96,7 @@ void Matrix2<T>::set(T *a_ptr)                                        	// rebuil
 }
 
 template<class T>
-void Matrix2<T>::setRotateZ(float a_rot)                                 // Rotate Matrix2 on the z axis circle
+void Matrix2<T>::setRotate(float a_rot)                                 // Rotate Matrix2 on the z axis circle
 {
 	m11 = (T)cosf(a_rot), m12 = (T)sinf(a_rot);
 	m21 = -(T)sinf(a_rot), m22 = (T)cosf(a_rot);
