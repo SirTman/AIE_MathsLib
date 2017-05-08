@@ -169,18 +169,6 @@ bool runUnitTests() {
 	TEST("Vector3f post-scale", v3c, Vector3f(3.45600008965f, -12.3468809128f, 220.672012329f));
 	TEST("Vector4f post-scale", v4c, Vector4f(66.0149993896f, -235.844696045f, 4215.1796875f, 0));
 
-	// vector pre-scale
-	v2a = Vector2f(13.5f, -48.23f);
-	v2c = v2a * 2.482f;
-	v3a = Vector3f(13.5f, -48.23f, 862);
-	v3c = v3a * 0.256f;
-	v4a = Vector4f(13.5f, -48.23f, 862, 0);
-	v4c = v4a * 4.89f;
-
-	TEST("Vector2f pre-scale", v2c, Vector2f(33.5069999695f, -119.706863403f));
-	TEST("Vector3f pre-scale", v3c, Vector3f(3.45600008965f, -12.3468809128f, 220.672012329f));
-	TEST("Vector4f pre-scale", v4c, Vector4f(66.0149993896f, -235.844696045f, 4215.1796875f, 0));
-
 	// vector dot product
 	v2a = Vector2f(13.5f, -48.23f); v2b = Vector2f(5, 3.99f);
 	float dot2 = v2a.dot(v2b);
